@@ -1,0 +1,1162 @@
+padd {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  overflow-x: hidden;
+}
+div.box{
+  overflow-x: hidden;
+  width: 100vw;
+}
+div.bigmenu {
+  display: none;
+}
+
+div.welcome p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 111px;
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+div.welcome h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 9px;
+  padding-left: 19px;
+  color: white;
+  letter-spacing: 12px;
+  position: absolute;
+  top: 59vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+  line-height: 20px;
+  border-bottom: 1px solid white;
+}
+@media (orientation: portrait) and (min-width: 1024px){
+div.welcome p{
+  font-size: 209px;
+
+}
+div.welcome h1{
+  font-size: 20px;
+  top: 60%;
+}
+
+}
+#slides {
+  position: relative;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+.slide {
+  font-size: 40px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+.slide:nth-of-type(1) {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/1.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.slide:nth-of-type(2) {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/2.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.slide:nth-of-type(3) {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide:nth-of-type(4) {
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/3.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slide:nth-of-type(5) {
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/4.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.nav-bar {
+  position: fixed;
+  background-color: #122;
+  top: 0;
+  left: -25rem;
+  height: 100vh;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-out;
+  z-index: 4;
+}
+.toggle {
+  left: 0;
+  box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+}
+.toggle-menu {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 5;
+}
+.line {
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.2s ease-out;
+}
+.toggle .line1 {
+  background-color: black;
+  transform: scale(1) rotateZ(-45deg) translate(-11px, 11px);
+}
+.toggle .line2 {
+  display: none;
+}
+.toggle .line3 {
+  background-color: black;
+  transform: scale(1) rotateZ(45deg) translate(-11px, -11px);
+}
+
+.toggle .toggle-menu {
+  background-color: white;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-list-item {
+  text-align: center;
+  padding: 1rem 0;
+}
+.nav-link {
+  color: #fff;
+  font-size: 2.2rem;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+.nav-link::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: 0.4s ease-in-out;
+  transform-origin: left;
+}
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+.information {
+  /* width: 100vw; */
+  height: 165vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6cb02;
+}
+@media (orientation: portrait) and (min-width: 726px){
+  .information{
+    height: 75vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 500px){
+  .information{
+    height: 214vh;
+  }
+  div.welcome p{
+    top:33%;
+    margin:0 0;
+  }
+  .about .activeart1 img{
+    margin-left:40vw ;
+  }
+  .about .activeart2 img{
+    margin-left:40vw ;
+  }
+  .about .activeart3 img{
+    margin-left:40vw ;
+  }
+.float-box div.gall6 p {
+    left: -22vw;
+  }
+  div.welcome h1{
+    top: 29vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px){
+  .information{
+    height: 104vh;
+  }
+  .about h1{
+    padding-top: 2em;;
+  }
+ 
+}
+@media (orientation: portrait) and (min-width: 1024px){
+  .information{
+    height: 57vh;
+  }
+}
+.floatBig {
+  display: none;
+}
+
+.information h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2em;
+  border-bottom: 1px solid black;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  line-height: 52px;
+}
+div.container p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 4em;
+  line-height: 29px;
+}
+/* sekcja pokaz technologii*/
+.float {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 172vh;
+}
+
+.float .item {
+  height: 42vh;
+}
+
+
+.float .item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100%;
+}
+
+.float .item:nth-of-type(1) {
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/8.jpg");
+  height: 43vh;
+}
+
+
+.float .item:nth-of-type(2) {
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/23.jpg");
+  height: 43vh;
+}
+
+.float .item:nth-of-type(3) {
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/25large.jpg");
+  height: 43vh;
+}
+
+.float .item:nth-of-type(4) {
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/hydro.jpg");
+  height: 43vh;
+}
+
+
+.float .item p {
+  font-family: 'saira', sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 4px black;
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+
+ .about h1,
+ .quotes h1 {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 33px;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding-top: 2em;
+  margin-top: 0em;
+ }
+
+ 
+ /* ABOUT */
+ .clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+ }
+ .about h2 {
+  background-color: #f6cb02;
+  padding: 3vw 0 3vw 0;
+  font-size: 25px;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  /* font-weight: normal; */
+  margin-bottom: 4px;
+  color: white;
+  text-align: center;
+ }
+ .about img{
+   width: 6em;
+   height: 6em;
+   margin-left: 35vw;
+   margin-top: 11vh;
+   margin-bottom: 2em;
+ }
+ .about p {
+  font-size: 26px;
+  font-weight: bold;
+  /* padding-left: 28vw; */
+  line-height: 2;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 0 auto;
+  /* transform: inherit; */
+  /* padding-left: 50vw; */
+  /* transform: translate(-16%); */
+  text-align: center;
+ }
+ .about{
+   background-color: white;
+   height: 200vh;
+   overflow-x: hidden;
+   align-items: center;
+   justify-content: center;
+   transition: 1s;
+ }
+ 
+  .art1{
+    height: 33%;
+    transition: 1s;
+    left: 0;
+    position: relative;
+  }
+ 
+ .art1{
+   /* margin-top: 0em; */
+   left: -100vw;
+   position: relative;
+   height: 28%;
+   transition: .5s;
+ }
+ .activeart1{
+   left: 0vw;
+ }
+ .art2{
+  /* margin-top: 10em; */
+  left: 100vw;
+  position: relative;
+  height: 33%;
+  transition: 1s;
+}
+.art3{
+  /* margin-top: 10em; */
+  left: -100vw;
+  position: relative;
+  height: 33%;
+  transition: 1s;
+}
+.activeart2{
+  left: 0vw;
+}
+.activeart3{
+
+left: 0vw;
+}
+.animlogo{
+  display:
+  flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (orientation: portrait) and (min-width: 768px){
+  .about{
+    height: 126vh;
+  }
+  .art1{
+    height: 33%;
+    }
+    .art2{height: 33%;}
+    .art3{height: 33%;}
+  }
+@media (orientation: landscape) and (max-width: 1023px){
+
+  section.float-box{
+    height: 529vh;
+  }
+  .about {
+    background-color: white;
+    height: 339vh;
+}
+.gall6 div.logos1{
+  width: 28vw;
+  height: 20vh;
+  left: -67vw;
+}
+.gall6 div.logos2 {
+  width: 27vw;
+  height: 20vh;
+  left: -67vw;
+}
+.gall6 div.logos3 {
+  width: 28vw;
+  height: 20vh;
+  left: -67vw;
+}
+.wrapper{
+  width:100vw;
+  /* height: 100vh; */
+}
+}
+@media (orientation: landscape) and (min-width: 500px){
+
+  .float{
+    height: 100vh;
+  }
+  .float .item:nth-of-type(1) {
+    
+height: 50vh;
+}
+.float .item:nth-of-type(2) {
+    
+  height: 50vh;
+  }
+  .float .item:nth-of-type(3) {
+    
+    height: 50vh;
+    }
+    .float .item:nth-of-type(4) {
+    
+      height: 50vh;
+      }
+}
+@media (min-width:533px) {
+  .float .item {
+    float: left;
+    width: 50%;
+    height: 50vh;
+  }
+}
+
+@media (min-width:768px) {
+
+  
+
+  .float .item p {
+    font-size: 30px;
+    padding: 15px 0;
+  }
+}
+
+
+
+/*FIXED*/
+
+.fixed {
+  width:100vw;
+  height: 95vh;
+  text-align: center;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/1.large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+
+  /*logos*/
+  div.logos1 {
+    transition: .3s;
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/atlas.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 61vw;
+    height: 15vh;
+    background-color:
+    white;
+    position: relative;
+    left: 10em;
+    /* top: -53vh; */
+    z-index: 2;
+  }
+  div.logos2 {
+    transition: .7s;
+    background-color: #fff;
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/mapei.jpg");
+    background-size: contain;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    width: 63vw;
+    height: 15vh;
+    background-color: #2779BF;
+    position: relative;
+    left: -61em;
+    top: 0vh;
+    z-index: 2;
+  }
+  div.logos3 {
+    transition: 1s;
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/rigips-logo.png");
+    background-size:
+    contain;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    width: 63vw;
+    height: 15vh;
+    background-color:
+    white;
+    position: relative;
+    left: 123em;
+    /* bottom: 0; */
+    top: 0vh;
+    z-index: 2;
+  }
+  div.activeLogos1{
+    left: -35vw;
+  }
+  div.activeLogos2{
+    left: -35vw;
+  }
+  div.activeLogos3{
+    left: -35vw;
+  }
+  p.logo{
+    transition: .5s;
+    /* position: relative; */
+    bottom: -59vh;
+    font-size: 68px;
+    /* left: 30vw; */
+    letter-spacing: -4px;
+    font-family: "Montserrat Alternates", sans-serif;
+    color:
+    white;
+  }
+  p.logo2{
+    transition: .5s;
+    /* position: relative; */
+    /* bottom: -31vh; */
+    /* left: 40vw; */
+    font-size: 13px;
+    /* letter-spacing: 4px; */
+    font-family: "Montserrat Alternates", sans-serif;
+    color:
+    white;
+    margin-top: 3em;
+    padding-left: 1em;
+  }
+  span {
+    color: transparent;
+    animation: blur 5s ease-out infinite;
+    -webkit-animation: blur 5s ease-out infinite;
+  }
+  span:nth-child(1) {
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+  }
+  span:nth-child(2) {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+  }
+  span:nth-child(3) {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+  }
+  span:nth-child(4) {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+  }
+  span:nth-child(5) {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+  }
+  span:nth-child(6) {
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+  }
+  span:nth-child(7) {
+    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+  }
+  span:nth-child(8) {
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+  }
+  span:nth-child(9) {
+    animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+  }
+  .activeLogo{
+    transform: 0;
+  }
+  @keyframes blur {
+    0%		{text-shadow:  0 0 100px #fff; opacity:0;}
+    5%		{text-shadow:  0 0 90px #fff;}
+    15%		{opacity: 1;}
+    20%		{text-shadow:  0 0 0px #fff;}
+    80%		{text-shadow:  0 0 0px #fff;}
+    85%		{opacity: 1;}
+    95%		{text-shadow:  0 0 90px #fff;}
+    100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+  }
+  
+  @-webkit-keyframes blur {
+    0%		{text-shadow:  0 0 100px #fff; opacity:0;}
+    5%		{text-shadow:  0 0 90px #fff;}
+    15%		{opacity: 1;}
+    20%		{text-shadow:  0 0 0px #fff;}
+    80%		{text-shadow:  0 0 0px #fff;}
+    85%		{opacity: 1;}
+    95%		{text-shadow:  0 0 90px #fff;}
+    100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+}
+
+div.gall6{
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 119vh;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/25.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+div.gall6 p{
+  position:
+  relative;
+  top: 20px;
+  left: -3vw;
+  /* font-size: 20px; */
+  font-family: 'saira', sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 4px black;
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+}
+@media (orientation: landscape) and (min-width: 1024px){
+  section.about{height: 203vh;}
+
+  .about img{
+    width: 10em;
+    height: 10em;
+  }
+  .about p{
+    font-size: 35px;
+  }
+  div.logos1{
+    width:30vw;
+  }
+  div.logos2{
+    width:30vw;
+  }
+  div.logos3{
+    width:30vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome p {
+    font-size: 215px;
+  }
+  .welcome h1 {
+    font-size: 19px;
+  }
+  .slide:nth-of-type(1) {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/1.large.jpg");
+  }
+  .slide:nth-of-type(2) {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/2.large.jpg");
+  }
+  .slide:nth-of-type(3) {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/5.large.jpg");
+  }
+  .slide:nth-of-type(4) {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/3.large.jpg");
+  }
+  .slide:nth-of-type(5) {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/4.large.jpg");
+  }
+  .fadein {
+    height: 70vh;
+    width: 50vw;
+  }
+  div.rollerText {
+    width: 50%;
+    left: 50%;
+  }
+  .information h3 {
+    font-size: 39px;
+  }
+  div.container p {
+    font-size: 1.3em;
+  }
+  div.roller5 {
+    top: 489vh;
+  }
+  div.roller4 {
+    top: 439vh;
+  }
+  div.roller3 {
+    top: 386vh;
+  }
+  div.roller2 {
+    top: 337vh;
+  }
+  div.roller1 {
+    top: 285vh;
+  }
+  .art1{
+    width:50vw;
+  }
+  .art2{
+    width:50vw;
+  }
+  .art3{
+    width:50vw;
+  }
+  .activeart1{
+    left: 37.5vw;
+    /* position: relative; */
+    transition: .3s;
+    width: 25vw;
+  }
+  .activeart2{
+    left: 37.5vw;
+    width:25vw;
+    transition: .3s;
+  }
+  .activeart3{
+    left: 37.5vw;
+    width:25vw;
+    transition: 0.3s;
+  }
+
+  .float-box img:nth-of-type(1){
+    margin-left: 12em;
+  }
+  .float-box img:nth-of-type(2){
+    margin-left:10em;
+  }
+  .float-box img:nth-of-type(3){
+    margin-left:10em;
+  }
+  div.gallery1{
+    height:50%;
+  }
+  div.gallery2{
+    height:50%;
+  }
+  div.gallery3 {
+    height:50%;
+  }
+  div.gallery4 {
+    height:50%;
+  }
+  div.gallery5 {
+    height:50%;
+  }
+  div.gallery6 {
+    height:50%;
+  }
+  div.activeLogos1{
+    left:0;
+    margin-bottom: 5em;
+    margin-top: 10em;
+    margin-left:1em;
+  }
+  div.activeLogos2{
+    left:0;
+    margin-bottom: 5em;
+    margin-left:1em;
+  }
+  div.activeLogos3{
+    left:0;
+    margin-bottom: 5em;
+    margin-left:1em;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+  div.welcome {
+    transition: 1s;
+  }
+  .fadein {
+    height: 50vh;
+  }
+  .float-box img:nth-of-type(1) {
+    /* width: 50%; */
+  }
+  div.rollerText {
+    width: 50%;
+    left: 50%;
+  }
+  .information h3 {
+    font-size: 39px;
+  }
+  div.container p {
+    font-size: 1.3em;
+  }
+  div.roller5 {
+    top: 489vh;
+  }
+  div.roller4 {
+    top: 439vh;
+  }
+  div.roller3 {
+    top: 386vh;
+  }
+  div.roller2 {
+    top: 337vh;
+  }
+  div.roller1 {
+    top: 285vh;
+  }
+  .toggle-menu {
+    display: none;
+  }
+  div.bigmenu {
+    display: block;
+    width: 100vw;
+    height: 7vh;
+    background-color: #f6cb02;
+    position: absolute;
+    top: 100vh;
+    border-bottom: 2px solid black;
+  }
+  .bigmenu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    /* text-decoration: none; */
+    /* justify-content: space-around; */
+  }
+  .bigmenu li {
+    width: 33%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .bigmenu ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 7px;
+  }
+  .bigmenu ul li a:hover{
+    color:honeydew;
+  }
+  div.activeBigMenu {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.container {
+    width: 50vw;
+    position: relative;
+    left: -100vw;
+    transition: 0.5s;
+  }
+  .activeContainer {
+    transform: translateX(+200%);
+  }
+  div.fadein {
+    display: none;
+  }
+  div.floatBig {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: #f6cb02;
+  }
+  div.gallery1 {
+    width: 33%;
+    background-color: grey;
+    opacity: 1;
+  }
+  div.gallery2 {
+    width: 33%;
+  
+    background-color: grey;
+    opacity: 1;
+  }
+  div.gallery3 {
+    width: 33%;
+  
+    background-color: grey;
+    opacity: 1;
+  }
+  div.gallery4 {
+    width: 33%;
+    background-color: grey;
+    opacity: 1;
+  }
+  div.gallery5 {
+    width: 33%;
+    background-color: grey;
+    opacity: 1;
+  }
+  div.gallery6 {
+    width: 33%;
+    background-color: grey;
+    opacity: 1;
+  }
+
+  .floatBig div.gallery1 {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/machine1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .floatBig .gallery2 {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/retro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .floatBig .gallery3 {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/28large.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .floatBig .gallery4 {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/hydro2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .floatBig .gallery5 {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/level.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .floatBig .gallery6 {
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/kabina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .floatBig div#loop {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    left: -33vw;
+    top: 0;
+    width: 33vw;
+    height: 100%;
+
+    transition: 0.6s;
+    background-color: #f0cc50;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+  div.gallery1:hover div#loop {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    left: 0;
+  }
+  div.gallery2:hover div#loop {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  div.gallery3:hover div#loop {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  div.gallery4:hover div#loop {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  div.gallery5:hover div#loop {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  div.gallery6:hover div#loop {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  div#loop p {
+    font-size: 34px;
+  }
+  .information {
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+  }
+  .activeInformation {
+     border-left: 300px solid #333;
+    border-right: 300px solid #333; 
+  }
+  .floatBig p{
+    font-size: 28px;
+    margin-top: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+  
+  div.gall6{
+    display:block;
+    /* max-width: 1920px; */overflow-x: hidden;
+    width: 100vw;
+    height: 101vh;
+    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+  }
+  div.gall6 p{
+    font-size: 34px;
+    /* position: absolute; */
+    margin-top: 44px;
+    margin-left: 27px;
+    letter-spacing: 10px;
+  }
+  .about img{
+    width: 5em;
+    height:5em;
+    padding-bottom: .2em;
+    padding-top: .2em;
+    margin-bottom: 1em;
+  }
+  div.activeLogos1{
+    width: 14em;
+    height:5em;
+  }
+  div.activeLogos2{
+    width: 14em;
+    height:5em;
+  }
+  div.activeLogos3{
+    width: 14em;
+    height:5em;
+  }
+  section.about{
+    height: 144vh;
+  }
+  .about h2{
+    padding: .5vw 0 .5vw 0;
+    font-size: 15px;
+  }
+  .about p{
+    font-size: 15px;
+  }
+  .art1{
+    height: 23%;
+  }
+  .art2{
+    height: 23%;
+  }
+  .art3{
+    height: 23%;
+  }
+  .about h1{
+    padding-top: 7em;
+  }
+}
