@@ -1,4 +1,4 @@
-padd {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +20,7 @@ div.welcome p {
   font-size: 111px;
   color: white;
   position: absolute;
-  top: 45%;
+  top: 55vh;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 3;
