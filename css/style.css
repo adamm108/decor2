@@ -1,4 +1,4 @@
-padd {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,7 +34,7 @@ div.welcome h1 {
   color: white;
   letter-spacing: 12px;
   position: absolute;
-  top: 59vh;
+  top: 55vh;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 3;
@@ -86,7 +86,7 @@ div.welcome h1{
 .slide:nth-of-type(1) {
   width: 100vw;
   height: 100vh;
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/1.jpg");
+  background-image: url("/Decor/images2/1.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ div.welcome h1{
 .slide:nth-of-type(2) {
   width: 100vw;
   height: 100vh;
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/2.jpg");
+  background-image: url("/Decor/images2/2.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -102,13 +102,13 @@ div.welcome h1{
 .slide:nth-of-type(3) {
   width: 100vw;
   height: 100vh;
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/5.jpg");
+  background-image: url("/Decor/images2/5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .slide:nth-of-type(4) {
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/3.jpg");
+  background-image: url("/Decor/images2/3.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -116,7 +116,7 @@ div.welcome h1{
   background-repeat: no-repeat;
 }
 .slide:nth-of-type(5) {
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/4.jpg");
+  background-image: url("/Decor/images2/4.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -298,23 +298,23 @@ div.container p {
 }
 
 .float .item:nth-of-type(1) {
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/8.jpg");
+  background-image: url("/Decor/images2/8.jpg");
   height: 43vh;
 }
 
 
 .float .item:nth-of-type(2) {
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/23.jpg");
+  background-image: url("/Decor/images2/23.jpg");
   height: 43vh;
 }
 
 .float .item:nth-of-type(3) {
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/25large.jpg");
+  background-image: url("/Decor/images2/25large.jpg");
   height: 43vh;
 }
 
 .float .item:nth-of-type(4) {
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/hydro.jpg");
+  background-image: url("/Decor/images2/hydro.jpg");
   height: 43vh;
 }
 
@@ -518,7 +518,7 @@ height: 50vh;
   width:100vw;
   height: 95vh;
   text-align: center;
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/1.large.jpg");
+  background-image: url("/Decor/images2/1.large.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -529,7 +529,7 @@ height: 50vh;
   /*logos*/
   div.logos1 {
     transition: .3s;
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/atlas.png");
+    background-image: url("/Decor/images2/atlas.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -545,7 +545,7 @@ height: 50vh;
   div.logos2 {
     transition: .7s;
     background-color: #fff;
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/mapei.jpg");
+    background-image: url("/Decor/images2/mapei.jpg");
     background-size: contain;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -559,7 +559,7 @@ height: 50vh;
   }
   div.logos3 {
     transition: 1s;
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/rigips-logo.png");
+    background-image: url("/Decor/images2/rigips-logo.png");
     background-size:
     contain;
     overflow-y: hidden;
@@ -587,7 +587,7 @@ height: 50vh;
     transition: .5s;
     /* position: relative; */
     bottom: -59vh;
-    font-size: 68px;
+    font-size: 62px;
     /* left: 30vw; */
     letter-spacing: -4px;
     font-family: "Montserrat Alternates", sans-serif;
@@ -680,7 +680,7 @@ div.gall6{
   overflow-x: hidden;
   width: 100vw;
   height: 119vh;
-  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/25.jpg");
+  background-image: url("/Decor/images2/25.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -730,19 +730,19 @@ div.gall6 p{
     font-size: 19px;
   }
   .slide:nth-of-type(1) {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/1.large.jpg");
+    background-image: url("/Decor/images2/1.large.jpg");
   }
   .slide:nth-of-type(2) {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/2.large.jpg");
+    background-image: url("/Decor/images2/2.large.jpg");
   }
   .slide:nth-of-type(3) {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/5.large.jpg");
+    background-image: url("/Decor/images2/5.large.jpg");
   }
   .slide:nth-of-type(4) {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/3.large.jpg");
+    background-image: url("/Decor/images2/3.large.jpg");
   }
   .slide:nth-of-type(5) {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/4.large.jpg");
+    background-image: url("/Decor/images2/4.large.jpg");
   }
   .fadein {
     height: 70vh;
@@ -986,37 +986,37 @@ div.gall6 p{
   }
 
   .floatBig div.gallery1 {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/machine1.jpg");
+    background-image: url("/Decor/images2/machine1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery2 {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/retro.jpg");
+    background-image: url("/Decor/images2/retro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery3 {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/28large.png");
+    background-image: url("/Decor/images2/28large.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery4 {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/hydro2.jpg");
+    background-image: url("/Decor/images2/hydro2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery5 {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/level.jpeg");
+    background-image: url("/Decor/images2/level.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery6 {
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/kabina.jpg");
+    background-image: url("/Decor/images2/kabina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1106,7 +1106,7 @@ div.gall6 p{
     /* max-width: 1920px; */overflow-x: hidden;
     width: 100vw;
     height: 101vh;
-    background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/25.jpg");
+    background-image: url("/Decor/images2/25.jpg");
     background-repeat: no-repeat;
     background-size: cover;
  
