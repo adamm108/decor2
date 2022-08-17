@@ -127,6 +127,7 @@
 @media (orientation: landscape) {
   div.contact{
     width:40vw;
+      height:80vh;
   }
 }
     @media (orientation: landscape) and (min-width: 1024px) {
