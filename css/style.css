@@ -20,7 +20,7 @@ div.welcome p {
   font-size: 111px;
   color: white;
   position: absolute;
-  top: 45%;
+  top: 55vh;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 3;
@@ -34,7 +34,7 @@ div.welcome h1 {
   color: white;
   letter-spacing: 12px;
   position: absolute;
-  top: 55vh;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 3;
@@ -86,7 +86,7 @@ div.welcome h1{
 .slide:nth-of-type(1) {
   width: 100vw;
   height: 100vh;
-  background-image: url("/Decor/images2/1.jpg");
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/1.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ div.welcome h1{
 .slide:nth-of-type(2) {
   width: 100vw;
   height: 100vh;
-  background-image: url("/Decor/images2/2.jpg");
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/2.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -102,13 +102,13 @@ div.welcome h1{
 .slide:nth-of-type(3) {
   width: 100vw;
   height: 100vh;
-  background-image: url("/Decor/images2/5.jpg");
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .slide:nth-of-type(4) {
-  background-image: url("/Decor/images2/3.jpg");
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/3.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -116,7 +116,7 @@ div.welcome h1{
   background-repeat: no-repeat;
 }
 .slide:nth-of-type(5) {
-  background-image: url("/Decor/images2/4.jpg");
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/4.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -178,6 +178,7 @@ div.welcome h1{
 }
 .nav-list {
   list-style: none;
+  padding-left:0px;
 }
 .nav-list-item {
   text-align: center;
@@ -226,7 +227,7 @@ div.welcome h1{
     top:33%;
     margin:0 0;
   }
-  .about .activeart1 img{
+  /*.about .activeart1 img{
     margin-left:40vw ;
   }
   .about .activeart2 img{
@@ -234,7 +235,7 @@ div.welcome h1{
   }
   .about .activeart3 img{
     margin-left:40vw ;
-  }
+  }*/
 .float-box div.gall6 p {
     left: -22vw;
   }
@@ -279,11 +280,16 @@ div.container p {
   padding-top: 4em;
   line-height: 29px;
 }
-/* sekcja pokaz technologii*/
+section.float-box
+{
+  display: block;
+  width:100vw;
+  height:50vh;
+}
 .float {
   max-width: 1920px;
   margin: 0 auto;
-  height: 172vh;
+  height: 200vh;
 }
 
 .float .item {
@@ -298,24 +304,24 @@ div.container p {
 }
 
 .float .item:nth-of-type(1) {
-  background-image: url("/Decor/images2/8.jpg");
-  height: 43vh;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/8.jpg");
+  height: 25%;
 }
 
 
 .float .item:nth-of-type(2) {
-  background-image: url("/Decor/images2/23.jpg");
-  height: 43vh;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/23.jpg");
+  height:25%;
 }
 
 .float .item:nth-of-type(3) {
-  background-image: url("/Decor/images2/25large.jpg");
-  height: 43vh;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/25large.jpg");
+  height: 25%;
 }
 
 .float .item:nth-of-type(4) {
-  background-image: url("/Decor/images2/hydro.jpg");
-  height: 43vh;
+  background-image: url("/home/adam/Pulpit/decorFinal/decorFinal/images2/hydro.jpg");
+  height: 25%;
 }
 
 
@@ -348,8 +354,9 @@ div.container p {
   display: block;
  }
  .about h2 {
+  width:100%;
   background-color: #f6cb02;
-  padding: 3vw 0 3vw 0;
+  padding: 3vw 10px 3vw 10px;
   font-size: 25px;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
@@ -361,7 +368,7 @@ div.container p {
  .about img{
    width: 6em;
    height: 6em;
-   margin-left: 35vw;
+  /* margin-left: 35vw;*/
    margin-top: 11vh;
    margin-bottom: 2em;
  }
@@ -379,12 +386,15 @@ div.container p {
   text-align: center;
  }
  .about{
+  display:flex;
+  flex-direction: column;
+
    background-color: white;
    height: 200vh;
    overflow-x: hidden;
    align-items: center;
    justify-content: center;
-   transition: 1s;
+   transition: .3s;
  }
  
   .art1{
@@ -399,7 +409,14 @@ div.container p {
    left: -100vw;
    position: relative;
    height: 28%;
-   transition: .5s;
+   width:50vw;
+   transition: .3s;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+
  }
  .activeart1{
    left: 0vw;
@@ -409,14 +426,26 @@ div.container p {
   left: 100vw;
   position: relative;
   height: 33%;
-  transition: 1s;
+  width:50vw;
+  transition: .3s;
+  display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
 }
 .art3{
   /* margin-top: 10em; */
   left: -100vw;
   position: relative;
   height: 33%;
-  transition: 1s;
+  width:50vw;
+  transition: .3s;
+  display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
 }
 .activeart2{
   left: 0vw;
@@ -441,40 +470,38 @@ left: 0vw;
     .art2{height: 33%;}
     .art3{height: 33%;}
   }
-@media (orientation: landscape) and (max-width: 1023px){
 
-  section.float-box{
-    height: 529vh;
-  }
   .about {
     background-color: white;
-    height: 339vh;
+    height: 200vh;
 }
-.gall6 div.logos1{
-  width: 28vw;
-  height: 20vh;
-  left: -67vw;
+ div.logos1{
+  width:64vw;
+  height: 12vh;
+  left: -32vw;
 }
-.gall6 div.logos2 {
-  width: 27vw;
-  height: 20vh;
-  left: -67vw;
+div.logos2 {
+  width:64vw;
+  height: 12vh;
+  left: -32vw;
 }
-.gall6 div.logos3 {
-  width: 28vw;
-  height: 20vh;
-  left: -67vw;
+ div.logos3 {
+  width: 64vw;
+  height: 12vh;
+  left: -32vw;
 }
 .wrapper{
   width:100vw;
   /* height: 100vh; */
 }
-}
+
+
 @media (orientation: landscape) and (min-width: 500px){
 
   .float{
-    height: 100vh;
+    height: 50vh;
   }
+
   .float .item:nth-of-type(1) {
     
 height: 50vh;
@@ -493,13 +520,38 @@ height: 50vh;
       }
 }
 @media (min-width:533px) {
-  .float .item {
+  .float{
+height:47vh;
+  }
+
+  .float .item:nth-of-type(1){
     float: left;
     width: 50%;
-    height: 50vh;
+    height: 50%;
   }
+  .float .item:nth-of-type(2){
+    float: left;
+    width: 50%;
+    height: 50%;
+  }
+  .float .item:nth-of-type(3){
+    float: left;
+    width: 50%;
+    height: 50%;
+  }
+  .float .item:nth-of-type(4){
+    float: left;
+    width: 50%;
+    height: 50%;
+  }
+  
+  
 }
+@media (orientation: landscape) and (max-width: 1023px){
 
+  .float{
+     height: 100vh;
+   }}
 @media (min-width:768px) {
 
   
@@ -518,7 +570,7 @@ height: 50vh;
   width:100vw;
   height: 95vh;
   text-align: center;
-  background-image: url("/Decor/images2/1.large.jpg");
+  background-image: url("/home/adam/Dokumenty/decor2/images2/1.large.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -529,11 +581,11 @@ height: 50vh;
   /*logos*/
   div.logos1 {
     transition: .3s;
-    background-image: url("/Decor/images2/atlas.jpeg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/atlas.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 61vw;
+    width: 63vw;
     height: 15vh;
     background-color:
     white;
@@ -545,7 +597,7 @@ height: 50vh;
   div.logos2 {
     transition: .7s;
     background-color: #fff;
-    background-image: url("/Decor/images2/mapei.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/mapei.jpg");
     background-size: contain;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -559,7 +611,7 @@ height: 50vh;
   }
   div.logos3 {
     transition: 1s;
-    background-image: url("/Decor/images2/rigips-logo.png");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/rigips-logo.png");
     background-size:
     contain;
     overflow-y: hidden;
@@ -574,20 +626,12 @@ height: 50vh;
     top: 0vh;
     z-index: 2;
   }
-  div.activeLogos1{
-    left: -35vw;
-  }
-  div.activeLogos2{
-    left: -35vw;
-  }
-  div.activeLogos3{
-    left: -35vw;
-  }
+ 
   p.logo{
     transition: .5s;
     /* position: relative; */
     bottom: -59vh;
-    font-size: 62px;
+    font-size: 68px;
     /* left: 30vw; */
     letter-spacing: -4px;
     font-family: "Montserrat Alternates", sans-serif;
@@ -606,6 +650,32 @@ height: 50vh;
     white;
     margin-top: 3em;
     padding-left: 1em;
+  }
+  @media (orientation: landscape){
+    div.logos1{
+      width:30vw;
+      height: 12vh;
+      left: -62vw;
+    }
+     div.logos2 {
+      width:30vw;
+      height: 12vh;
+      left: -62vw;
+    }
+    div.logos3 {
+      width: 30vw;
+      height: 12vh;
+      left: -62vw;
+    }
+  }
+   div.activeLogos1{
+    left: -35vw;
+  }
+  div.activeLogos2{
+    left: -35vw;
+  }
+  div.activeLogos3{
+    left: -35vw;
   }
   span {
     color: transparent;
@@ -680,7 +750,7 @@ div.gall6{
   overflow-x: hidden;
   width: 100vw;
   height: 119vh;
-  background-image: url("/Decor/images2/25.jpg");
+  background-image: url("/home/adam/Dokumenty/decor2/images2/25.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -691,7 +761,7 @@ div.gall6 p{
   position:
   relative;
   top: 20px;
-  left: -3vw;
+  left: -2vw;
   /* font-size: 20px; */
   font-family: 'saira', sans-serif;
   color: white;
@@ -702,6 +772,9 @@ div.gall6 p{
   padding: 10px 10px 10px 10px;
 }
 @media (orientation: landscape) and (min-width: 1024px){
+  .float{
+    height:100vh;
+  }
   section.about{height: 203vh;}
 
   .about img{
@@ -730,19 +803,19 @@ div.gall6 p{
     font-size: 19px;
   }
   .slide:nth-of-type(1) {
-    background-image: url("/Decor/images2/1.large.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/1.large.jpg");
   }
   .slide:nth-of-type(2) {
-    background-image: url("/Decor/images2/2.large.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/2.large.jpg");
   }
   .slide:nth-of-type(3) {
-    background-image: url("/Decor/images2/5.large.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/5.large.jpg");
   }
   .slide:nth-of-type(4) {
-    background-image: url("/Decor/images2/3.large.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/3.large.jpg");
   }
   .slide:nth-of-type(5) {
-    background-image: url("/Decor/images2/4.large.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/4.large.jpg");
   }
   .fadein {
     height: 70vh;
@@ -783,31 +856,22 @@ div.gall6 p{
     width:50vw;
   }
   .activeart1{
-    left: 37.5vw;
+    /*left: 37.5vw;
     /* position: relative; */
     transition: .3s;
     width: 25vw;
   }
   .activeart2{
-    left: 37.5vw;
+   /* left: 37.5vw;*/
     width:25vw;
     transition: .3s;
   }
   .activeart3{
-    left: 37.5vw;
+   /* left: 37.5vw;*/
     width:25vw;
     transition: 0.3s;
   }
 
-  .float-box img:nth-of-type(1){
-    margin-left: 12em;
-  }
-  .float-box img:nth-of-type(2){
-    margin-left:10em;
-  }
-  .float-box img:nth-of-type(3){
-    margin-left:10em;
-  }
   div.gallery1{
     height:50%;
   }
@@ -851,9 +915,7 @@ div.gall6 p{
   .fadein {
     height: 50vh;
   }
-  .float-box img:nth-of-type(1) {
-    /* width: 50%; */
-  }
+
   div.rollerText {
     width: 50%;
     left: 50%;
@@ -986,37 +1048,37 @@ div.gall6 p{
   }
 
   .floatBig div.gallery1 {
-    background-image: url("/Decor/images2/machine1.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/machine1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery2 {
-    background-image: url("/Decor/images2/retro.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/retro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery3 {
-    background-image: url("/Decor/images2/28large.png");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/28large.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery4 {
-    background-image: url("/Decor/images2/hydro2.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/hydro2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery5 {
-    background-image: url("/Decor/images2/level.jpeg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/level.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .floatBig .gallery6 {
-    background-image: url("/Decor/images2/kabina.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/kabina.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1106,7 +1168,7 @@ div.gall6 p{
     /* max-width: 1920px; */overflow-x: hidden;
     width: 100vw;
     height: 101vh;
-    background-image: url("/Decor/images2/25.jpg");
+    background-image: url("/home/adam/Dokumenty/decor2/images2/25.jpg");
     background-repeat: no-repeat;
     background-size: cover;
  
