@@ -394,7 +394,7 @@ section.float-box
    overflow-x: hidden;
    align-items: center;
    justify-content: center;
-   transition: .3s;
+   transition: 1s;
  }
  
   .art1{
