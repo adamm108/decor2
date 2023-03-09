@@ -475,6 +475,11 @@ left: 0vw;
     background-color: white;
     height: 115vh;
 }
+@media (orientation: landscape) {
+  .about {
+    height: 300vh;
+  }
+}
  div.logos1{
   width:64vw;
   height: 12vh;
