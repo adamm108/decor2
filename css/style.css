@@ -29,7 +29,7 @@ div.welcome p {
 }
 div.welcome h1 {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 9px;
+  font-size: 14px;
   padding-left: 19px;
   color: white;
   letter-spacing: 12px;
@@ -274,7 +274,7 @@ div.welcome h1{
 }
 div.container p {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 4em;
